@@ -11,7 +11,7 @@ var Activity = require('../models/activity.js');
 router.route('/')
 //adds a new activity to the database
 .post(function(req, res){
-    
+    console.log(req.body);     
     for(var i in req.body){
         console.log(i); 
         req.name = i; 

@@ -15,6 +15,7 @@ ActivitySchema.statics.random = function(res){
                 if(err) {
                     return res.send(err); 
                 }
+                console.log(activity); 
                 if(!activity) activity = "netflix"; 
                 message = activity.name +" and chill.";
                 console.log(message); 
